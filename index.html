@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramais</title>
+
+    <script src="Js/script1.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>Prefeitura Ramais</h1>
+    </header>
+
+    <main>
+        <div class="title">
+            <h2>Ramais</h2>
+            <span>Lista de ramais</span>
+        </div>
+
+        <div class="card"> 
+            <div class="lineinput">
+                <label>Ramal</label>
+                <input type="text" id="ramal" placeholder="Digite o ramal">
+            </div>
+
+            <div class="lineinput">
+                <label>Nome</label>
+                <input type="text" id="nome" placeholder="Digite o nome">
+            </div>
+
+            <div class="lineinput">
+                <label>Setor</label>
+                <input type="text" id="setor" placeholder="Digite o setor">
+            </div>
+
+            <div class="lineinput">
+                <label>Anexo</label>
+                <input type="text" id="anexo" placeholder="Digite o anexo">
+            </div>
+
+            <div class="lineinput">
+                <label>Prefeitura</label>
+                <input type="text" id="prefeitura" placeholder="Digite a prefeitura">
+            </div>
+
+        <button onclick="prefeitura.salvar()">Salvar</button>
+        <button onclick="prefeitura.consultar()">consultar</button>
+        </div>
+
+        <div class="content">
+            <table border="1">
+                <thead>
+                    <th>Ramal</th>
+                    <th>Nome</th>
+                    <th>Setor</th>
+                    <th>Anexo</th>
+                    <th>Prefeitura</th>
+                </thead>
+                <tbody id="tbody">
+                
+                </tbody>
+            </table>
+        </div>
+    </main>
+    
+   
+</body>
+</html>
